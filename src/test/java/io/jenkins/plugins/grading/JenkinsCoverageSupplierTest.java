@@ -47,10 +47,10 @@ class JenkinsCoverageSupplierTest {
 
         CoverageScoreBuilder builder = new CoverageScoreBuilder().withConfiguration(configuration);
         assertThat(scores).hasSize(2).contains(
-                builder.withId("line").withDisplayName("Line")
+                builder.withId("line").withDisplayName("Line Coverage")
                         .withCoveredPercentage(50)
                         .build(),
-                builder.withId("conditional").withDisplayName("Conditional")
+                builder.withId("conditional").withDisplayName("Conditional Coverage")
                         .withCoveredPercentage(10)
                         .build()
         );
